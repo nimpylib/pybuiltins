@@ -1,0 +1,7 @@
+*/*
+/megatest
+/megatest.exe
+/testresults/
+!*.nim
+!*.nims
+!*.md

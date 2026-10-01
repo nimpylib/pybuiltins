@@ -34,11 +34,11 @@ pylib "float_utils", " ^= 0.1.1"
 pylib "vsyncio", " ^= 0.1.0"
 
 import std/os
-proc runTestament(targets = "c") =
-  exec "testament --targets:" & targets.quoteShell &  " p 'tests/pkgs/*.nim'"
+proc runTestament() =
+  exec "testament p 'tests/pkgs/*.nim'"
 
 task testament, "run testament":
-  runTestament(if defined(js): "js" else: "c")
+  runTestament()
 
 task test, "test all":
   testamentTask()

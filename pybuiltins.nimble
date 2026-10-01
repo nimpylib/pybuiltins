@@ -31,6 +31,7 @@ pylib "py_constants", " ^= 0.1.0"
 pylib "collections_abc", " ^= 0.1.0"
 pylib "pyerrors", " ^= 0.1.0"
 pylib "float_utils", " ^= 0.1.1"
+pylib "vsyncio", " ^= 0.1.0"
 
 import std/os
 proc runTestament(targets = "c") =
